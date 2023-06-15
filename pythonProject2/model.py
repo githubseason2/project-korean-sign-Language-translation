@@ -19,7 +19,7 @@ encoded_labels = label_encoder.fit_transform(labels)
 
 model = tf.keras.models.Sequential([
     tf.keras.layers.Flatten(input_shape=(21, 2)),
-    tf.keras.layers.Dense(64, activation='relu'),
+    tf.keras.layers.Dense(128, activation='relu'),
     tf.keras.layers.Dense(40, activation='softmax')
 ])
 
